@@ -1,13 +1,50 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Montserrat:wght@100;400;500;600;700&display=swap');
+
+:root {
+  --primary-font: 'Montserrat', sans serif;
+  --stylish-font: 'Leckerli One', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  margin: 0;
+  font-family: var(--primary-font);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: thistle;
+  box-sizing: border-box;
+}
+
+.app {
+  text-align: center;
+}
+
+.cat-container {
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+}
+
+.app-header {
+  color: #5448a4;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  margin-top: 1.5rem;
+  padding: 0.5rem;
+  background: slateblue;
+  color: whitesmoke;
+  border-radius: 0.2rem;
+  font-size: 1em;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #5f51b8;
 }
